@@ -7,6 +7,7 @@ const bot = new Client({
 });
 
 bot.commands = new Collection();
+bot.aliases = new Collection();
 
 let load = (dir) => {
     readdir(dir, (err, files) => {
